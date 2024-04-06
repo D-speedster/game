@@ -1,17 +1,17 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/components/Header";
-import MainBanner from "@/components/MainBanner";
-import Features from "@/components/Features";
-import Trending from "@/components/Trending";
-import Most_played from "@/components/Most_played";
-import Categories from "@/components/Categories";
+import MainBanner from "@/components/Home/MainBanner";
+import Features from "@/components/Home/Features";
+import Trending from "@/components/Home/Trending";
+import Most_played from "@/components/Home/Most_played";
+import Categories from "@/components/Home/Categories";
 import Footer from "@/components/Footer";
-import Cta from "@/components/Cta";
+import Cta from "@/components/Home/Cta";
 export default function Home() {
   return (
     <>
-      <Header></Header>
+      
       <MainBanner></MainBanner>
       <Features></Features>
       <Trending></Trending>
