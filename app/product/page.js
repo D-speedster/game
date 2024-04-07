@@ -7,7 +7,7 @@ export default function page() {
   return (
     <>
    
-    
+   <Header></Header>
     <PageHeading></PageHeading>
     <Single_product></Single_product>
     </>

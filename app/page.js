@@ -11,7 +11,7 @@ import Cta from "@/components/Home/Cta";
 export default function Home() {
   return (
     <>
-      
+      <Header></Header>
       <MainBanner></MainBanner>
       <Features></Features>
       <Trending></Trending>

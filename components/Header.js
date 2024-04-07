@@ -1,32 +1,50 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Header() {
-    return (
-        <>
-         <header className="header-area header-sticky">
-  <div className="container">
-    <div className="row">
-      <div className="col-12">
-        <nav className="main-nav">
-          <a href="index.html" className="logo">
-            <img src="images/logo.png" alt style={{width: 158}} />
-          </a>
-          <ul className="nav">
-            <li><a href="index.html" className="active">Home</a></li>
-            <li><a href="shop.html">Our Shop</a></li>
-            <li><a href="product-details.html">Product Details</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#">Sign In</a></li>
-          </ul>
-          <a className="menu-trigger">
-            <span>Menu</span>
-          </a>
-        </nav>
+  return (
+    <header className="header-area header-sticky">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <nav className="main-nav">
+              {/* ***** Logo Start ***** */}
+              <Link href="" className="logo">
+                <img src="images/logoo.png" alt="" style={{ width: '158px' }} />
+                <span style={{ color: 'white' }}>Console Fa</span>
+              </Link>
+              {/* ***** Logo End ***** */}
+              {/* ***** Menu Start ***** */}
+              <ul className="nav">
+                <li>
+                  <Link href="/" className="active">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="products">Our Shop</Link>
+                </li>
+                <li>
+                  <Link href="product-details.html">Product Details</Link>
+                </li>
+                <li>
+                  <Link href="contact">Contact Us</Link>
+                </li>
+                <li>
+                  <Link href="/">Sign In</Link>
+                </li>
+              </ul>
+              <ul>
+                <li className='test'>
+                  <Link href="/">Sign In</Link>
+                </li>
+              </ul>
+              {/* ***** Menu End ***** */}
+            </nav>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</header>
+    </header>
 
-        </>
-    )
+  )
 }

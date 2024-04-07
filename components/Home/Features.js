@@ -9,9 +9,9 @@ export default function Features() {
                         <a href="#">
                             <div className="item">
                                 <div className="image">
-                                    <img src="images/featured-01.png" alt style={{ maxWidth: 44 }} />
+                                    <img src="images/featured-01.png" alt style={{ maxWidth: '44px' }} />
                                 </div>
-                                <h4>Free Storage</h4>
+                                <h4>فضای رایگان</h4>
                             </div>
                         </a>
                     </div>
@@ -19,9 +19,9 @@ export default function Features() {
                         <a href="#">
                             <div className="item">
                                 <div className="image">
-                                    <img src="images/featured-02.png" alt style={{ maxWidth: 44 }} />
+                                    <img src="images/featured-02.png" alt style={{ maxWidth: '44px' }} />
                                 </div>
-                                <h4>User More</h4>
+                                <h4>کاربرپسند</h4>
                             </div>
                         </a>
                     </div>
@@ -29,7 +29,7 @@ export default function Features() {
                         <a href="#">
                             <div className="item">
                                 <div className="image">
-                                    <img src="images/featured-03.png" alt style={{ maxWidth: 44 }} />
+                                    <img src="images/featured-03.png" alt style={{ maxWidth: '44px' }} />
                                 </div>
                                 <h4>Reply Ready</h4>
                             </div>
@@ -39,9 +39,9 @@ export default function Features() {
                         <a href="#">
                             <div className="item">
                                 <div className="image">
-                                    <img src="images/featured-04.png" alt style={{ maxWidth: 44 }} />
+                                    <img src="images/featured-04.png" alt style={{ maxWidth: '44px' }} />
                                 </div>
-                                <h4>Easy Layout</h4>
+                                <h4>دسترسی راحت</h4>
                             </div>
                         </a>
                     </div>

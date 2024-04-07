@@ -4,16 +4,18 @@ export default function MainBanner() {
     return (
        <div className="main-banner">
   <div className="container">
-    <div className="row">
+    <div className="row justify-">
       <div className="col-lg-6 align-self-center">
         <div className="caption header-text">
-          <h6>Welcome to lugx</h6>
-          <h2>BEST GAMING SITE EVER!</h2>
-          <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
+          <h6>به LUGX خوش آمدید</h6>
+          <h2>بهترین سایت گیمینگ!</h2>
+          <p>
+          LUGX Gaming یک قالب وب سایت بوت استرپ 5 HTML CSS رایگان برای وب سایت های بازی شما است. شما می توانید این طرح را برای مقاصد تجاری دانلود و استفاده کنید. لطفا به دوستان خود در مورد TemplateMo اطلاع دهید.
+          </p>
           <div className="search-input">
             <form id="search" action="#">
-              <input type="text" placeholder="Type Something" id="searchText" name="searchKeyword" onkeypress="handle" />
-              <button role="button">Search Now</button>
+              <input type="text" placeholder="چیزی بنویسید" id="searchText" name="searchKeyword"  />
+              <button role="button">جستجو کنید</button>
             </form>
           </div>
         </div>
