@@ -2,6 +2,7 @@
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.rtl.min.css'
 import Header from "@/components/Header";
+import Head from "next/head";
 // const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata = {
@@ -12,7 +13,14 @@ import Header from "@/components/Header";
 export default function RootLayout({ children }) {
   return (
     <html>
-  
+      <head>
+        <script
+          // you might need to get a newer version
+          src="https://kit.fontawesome.com/fbadad80a0.js"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
+
       <body lang="ar">{children}</body>
     </html>
   );

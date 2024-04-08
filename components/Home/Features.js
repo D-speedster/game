@@ -11,7 +11,7 @@ export default function Features() {
                                 <div className="image">
                                     <img src="images/featured-01.png" alt style={{ maxWidth: '44px' }} />
                                 </div>
-                                <h4>فضای رایگان</h4>
+                                <h4>ارزان ترین ها</h4>
                             </div>
                         </a>
                     </div>
@@ -21,7 +21,7 @@ export default function Features() {
                                 <div className="image">
                                     <img src="images/featured-02.png" alt style={{ maxWidth: '44px' }} />
                                 </div>
-                                <h4>کاربرپسند</h4>
+                                <h4>پشتیبانی سریع</h4>
                             </div>
                         </a>
                     </div>
@@ -31,7 +31,7 @@ export default function Features() {
                                 <div className="image">
                                     <img src="images/featured-03.png" alt style={{ maxWidth: '44px' }} />
                                 </div>
-                                <h4>Reply Ready</h4>
+                                <h4>نماد اعتماد</h4>
                             </div>
                         </a>
                     </div>

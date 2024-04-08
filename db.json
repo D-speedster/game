@@ -1,0 +1,51 @@
+[
+    {
+        
+        "title": "spider-man",
+        "price": 450000,
+        "genre": "action",
+        "pic": "https:///"
+    
+    } , 
+    {
+        
+        "title": "read dead",
+        "price": 450000,
+        "genre": "action",
+        "pic": "https:///"
+    
+    } , 
+    {
+        
+        "title": "Cyberpunk",
+        "price": 650000,
+        "genre": "action",
+        "pic": "https:///"
+    
+    } , 
+    {
+        
+        "title": "gotham city",
+        "price": 150000,
+        "genre": "action",
+        "pic": "https:///"
+    
+    } , 
+    {
+        
+        "title": "fifa24",
+        "price": 950000,
+        "genre": "action",
+        "pic": "https:///"
+    
+    } , 
+
+    {
+        
+        "title": "eFootball™ 2024",
+        "price": 0,
+        "genre": "action",
+        "pic": "https:///"
+    
+    } 
+]
