@@ -39,7 +39,7 @@ export default function Categories() {
         <div className="item">
           <h4>Action</h4>
           <div className="thumb">
-            <a href="product-details.html"><img src="images/categories-04.jpg" alt /></a>
+            <a href="product-details.html"><img src="images/Best-PS5-Exclusives.png" alt /></a>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function Categories() {
         <div className="item">
           <h4>Action</h4>
           <div className="thumb">
-            <a href="product-details.html"><img src="images/categories-04.jpg" alt /></a>
+            <a href="product-details.html"><img src="images/mk11u.jpg" alt /></a>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function MainBanner() {
     <div className="row justify-">
       <div className="col-lg-6 align-self-center">
         <div className="caption header-text">
-          <h6>به LUGX خوش آمدید</h6>
+          <h3 style={{color : '#FFF'}}> Welcome To Site</h3>
           <h2>بهترین سایت گیمینگ!</h2>
           <p>
           LUGX Gaming یک قالب وب سایت بوت استرپ 5 HTML CSS رایگان برای وب سایت های بازی شما است. شما می توانید این طرح را برای مقاصد تجاری دانلود و استفاده کنید. لطفا به دوستان خود در مورد TemplateMo اطلاع دهید.

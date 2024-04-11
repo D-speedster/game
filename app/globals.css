@@ -26,84 +26,14 @@ font & reset css
 --------------------------------------------- 
 */
 
-@font-face {
-  font-family: myFirstFont;
-  src: url('/public/IRANSans/WebFonts/fonts/woff2/IRANSansWeb.woff2');
-}
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
 
-/* 
----------------------------------------------
-reset
---------------------------------------------- 
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-div pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-figure,
-header,
-nav,
-section,
-article,
-aside,
-footer,
-figcaption {
+
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
-
-
+  
 }
-
 
 
 
@@ -149,16 +79,6 @@ hgroup {
   box-sizing: border-box;
 }
 
-html,
-body {
-  font-family: myFirstFont !important;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-
-
-}
 
 a {
   text-decoration: none !important;
@@ -196,9 +116,12 @@ img {
 Global Styles
 --------------------------------------------- 
 */
-html,
+
 body {
-  font-family: 'myFirstFont' !important;
+  
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   direction: rtl;
 }
 
@@ -1032,7 +955,7 @@ Trending Style
 
 .card-title {
   font-weight: 500;
-  font-family: '';
+
   font-size: 20px;
   color: #FFF !important;
 
@@ -1739,12 +1662,6 @@ Responsive Style
 --------------------------------------------- 
 */
 
-body {
-  overflow-x: hidden;
-  font-family: 'myFirstFont' !important;
-
-}
-
 @media (max-width: 767px) {
   .header-area {
     top: 0;
@@ -1871,5 +1788,5 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto;
- 
+
 }
