@@ -8,7 +8,9 @@ import Most_played from "@/components/Home/Most_played";
 import Categories from "@/components/Home/Categories";
 import Footer from "@/components/Footer";
 import Cta from "@/components/Home/Cta";
+import ConnectToDb from "@/utils/db";
 export default function Home() {
+  ConnectToDb()
   return (
     <>
       <Header></Header>
