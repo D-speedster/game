@@ -1,5 +1,13 @@
-import React from 'react'
-import ProductItem from '../module/ProductItem'
+"use client";
+
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import ProductItem from '../module/ProductItem';
 
 export default function Trending() {
     return (
@@ -8,8 +16,8 @@ export default function Trending() {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="section-heading">
-                            <h6>جذیدترین</h6>
-                            <h2>جدیدترین بازی ها</h2>
+                            <h6>پرفروش</h6>
+                            <h2>پرفروش ترین ها</h2>
                         </div>
                     </div>
                     <div className="col-lg-6">
@@ -17,15 +25,10 @@ export default function Trending() {
                             <a href="shop.html">دیدن همه</a>
                         </div>
                     </div>
-                   
                     <ProductItem></ProductItem>
-                    <ProductItem></ProductItem>
-                    <ProductItem></ProductItem>
-                    <ProductItem></ProductItem>
-                    <ProductItem></ProductItem>
-                    <ProductItem></ProductItem>
-                    <ProductItem></ProductItem>
-                    <ProductItem></ProductItem>
+
+
+
                 </div>
             </div>
         </div>

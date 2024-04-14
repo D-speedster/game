@@ -1,32 +1,67 @@
 import React from 'react'
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-export default function ProductItem() {
+// import required modules
+import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+export default async function ProductItem() {
+    let genre = await fetch('http://localhost:3000/api/product4');
+    let response = await genre.json();
+    console.log(response.length)
+
+
     return (
-        <div className="col-lg-3 col-md-6">
-            <div className='card'>
-
-                <div className='card-header'>
-                    <span className='card-title'>بازی spider-man 2  برای ps5</span>
-                </div>
-                <div className='card-body'>
-                    <img className='card-img' src='../images/trending-01.jpg' />
-                </div>
+        <>
 
 
-                <div className='container'>
-                    <div className='rainbow-box'>
-                        <div className='price'>
-                            <span>5,000,000 تومان</span>
-                        </div>
-                    </div>
-                </div>
+            <>
+                <Swiper
+
+
+                    modules={[Pagination]}
+                    className="mySwiper"
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                            spaceBetween: 50,
+                        },
+                    }}
+                >
+                    {
+                        response.data.map(data => {
+                            return <SwiperSlide><div className='card'>
+
+                                <img src={data.pic} />
+
+                                <div className='mt-2 mb-2'>
+                                    <span>بازی {data.title}</span>
+                                </div>
+
+                                <div className='price'>
+                                    <span className='fw-bold'>{data.price.toLocaleString()} تومان</span>
+                                </div>
+
+
+                            </div>
+                            </SwiperSlide>
+                        })
+                    }
+
+                </Swiper>
+            </>
 
 
 
-
-
-
-            </div>
-        </div >
+        </>
     )
 }
