@@ -1,19 +1,72 @@
 import React from 'react'
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-export default function ProductItem() {
+// import required modules
+import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+export default async function ProductItem() {
+    let genre = await fetch('http://localhost:3000/api/product', {
+        cache: 'no-store'
+    });
+    let response = await genre.json();
+
+
+
     return (
-        <div className="col-lg-3 col-md-6">
-            <div className="item">
-                <div className="thumb">
-                    <a href="product-details.html"><img src="images/trending-01.jpg" alt /></a>
-                    <span className="price"><em>$28</em>$20</span>
-                </div>
-                <div className="down-content">
-                    <span className="category">Action</span>
-                    <h4>Assasin Creed</h4>
-                    <a href="product-details.html"><i className="fa fa-shopping-bag" /></a>
-                </div>
-            </div>
-        </div>
+        <>
+
+
+            <>
+                <Swiper
+
+
+                    modules={[Pagination]}
+                    pagination={{
+                        clickable: true,
+                      }} 
+                      grabCursor={true}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                        },
+                        1024: {
+                            slidesPerView: 5,
+                            spaceBetween: 20,
+                        },
+                    }}
+                >
+                    {
+                        response.data.map(data => {
+                            return <SwiperSlide><div className='card'>
+
+                                <img src={data.pic} />
+
+                                <div className='mt-2 mb-2'>
+                                    <span>بازی {data.title}</span>
+                                </div>
+
+                                <div className='price'>
+                                   <button className='btn ' style={{backgroundColor: '#0056b3' , color : '#FFF'}}>{data.price} تومان</button>
+                                </div>
+
+
+                            </div>
+                            </SwiperSlide>
+                        })
+                    }
+
+                </Swiper>
+            </>
+
+
+
+        </>
     )
 }
