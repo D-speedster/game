@@ -10,10 +10,14 @@ import Footer from "@/components/Footer";
 import Cta from "@/components/Home/Cta";
 import ConnectToDb from "@/utils/db";
 import Offer from "@/components/Home/Offer";
+
+
 export default function Home() {
+  
+
   ConnectToDb()
   return (
-    <>
+    <div>
       <Header></Header>
       <MainBanner></MainBanner>
       <Features></Features>
@@ -27,6 +31,6 @@ export default function Home() {
       <Footer></Footer>
 
 
-    </>
+    </div>
   )
 }

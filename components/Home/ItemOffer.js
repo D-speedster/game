@@ -9,12 +9,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 export default function ItemOffer() {
-    const progressCircle = useRef(null);
-    const progressContent = useRef(null);
-    const onAutoplayTimeLeft = (s, time, progress) => {
-        progressCircle.current.style.setProperty('--progress', 1 - progress);
-        progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-    };
+
     return (
         <>
             <Swiper
@@ -27,39 +22,156 @@ export default function ItemOffer() {
 
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img src='/images/games/eldenRing.jpg' />
-                    <h6> خرید بازی Eleden Ring</h6>
+                    <div className='card'>
+
+                        <img src='/images/games/spiderman.jpg' />
+
+                        <div className='container'>
+                            <div className='mt-2 mb-2'>
+
+
+                                <span className='titleGame'>بازی data.title </span>
+                                <span className='d-block'>PS5</span>
+
+                            </div>
+                            <div className='info-platform'>
+
+                            </div>
+                            <div className='price'>
+                                <button className='btn ' style={{ backgroundColor: '#0056b3', color: '#FFF' }}>data.price تومان</button>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
 
-                    <img src='/images/games/ragnarok.jpg' />
+                    <div className='card'>
+
+                        <img src='/images/games/spiderman.jpg' />
+
+                        <div className='container'>
+                            <div className='mt-2 mb-2'>
+
+
+                                <span className='titleGame'>بازی data.title </span>
+                                <span className='d-block'>PS5</span>
+
+                            </div>
+                            <div className='info-platform'>
+
+                            </div>
+                            <div className='price'>
+                                <button className='btn ' style={{ backgroundColor: '#0056b3', color: '#FFF' }}>data.price تومان</button>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
 
-                    <img src='/images/games/Gta.jpg' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src='/images/games/Hogwarts.jpg' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src='/images/games/modern3.jpg' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src='/images/games/spiderman.jpg' />
-                </SwiperSlide>
+                    <div className='card'>
+
+                        <img src='/images/games/spiderman.jpg' />
+
+                        <div className='container'>
+                            <div className='mt-2 mb-2'>
 
 
-                <div className="autoplay-progress" slot="container-end">
-                    <svg viewBox="0 0 48 48" ref={progressCircle}>
-                        {/* <circle cx="24" cy="24" r="20"></circle> */}
-                    </svg>
-                    <span ref={progressContent}></span>
-                </div>
+                                <span className='titleGame'>بازی data.title </span>
+                                <span className='d-block'>PS5</span>
+
+                            </div>
+                            <div className='info-platform'>
+
+                            </div>
+                            <div className='price'>
+                                <button className='btn ' style={{ backgroundColor: '#0056b3', color: '#FFF' }}>data.price تومان</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='card'>
+
+                        <img src='/images/games/spiderman.jpg' />
+
+                        <div className='container'>
+                            <div className='mt-2 mb-2'>
+
+
+                                <span className='titleGame'>بازی data.title </span>
+                                <span className='d-block'>PS5</span>
+
+                            </div>
+                            <div className='info-platform'>
+
+                            </div>
+                            <div className='price'>
+                                <button className='btn ' style={{ backgroundColor: '#0056b3', color: '#FFF' }}>data.price تومان</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='card'>
+
+                        <img src='/images/games/spiderman.jpg' />
+
+                        <div className='container'>
+                            <div className='mt-2 mb-2'>
+
+
+                                <span className='titleGame'>بازی data.title </span>
+                                <span className='d-block'>PS5</span>
+
+                            </div>
+                            <div className='info-platform'>
+
+                            </div>
+                            <div className='price'>
+                                <button className='btn ' style={{ backgroundColor: '#0056b3', color: '#FFF' }}>data.price تومان</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className='card'>
+
+                        <img src='/images/games/spiderman.jpg' />
+
+                        <div className='container'>
+                            <div className='mt-2 mb-2'>
+
+
+                                <span className='titleGame'>بازی data.title </span>
+                                <span className='d-block'>PS5</span>
+
+                            </div>
+                            <div className='info-platform'>
+
+                            </div>
+                            <div className='price'>
+                                <button className='btn ' style={{ backgroundColor: '#0056b3', color: '#FFF' }}>data.price تومان</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </SwiperSlide>
+
             </Swiper>
         </>
     )

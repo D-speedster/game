@@ -10,11 +10,13 @@ export const metadata = {
 };
 
 
+
 //👇 Configure our font object
 
 export default function RootLayout({ children }) {
+
   return (
-    <html >
+    <html  >
       <head >
         <script
           // you might need to get a newer version

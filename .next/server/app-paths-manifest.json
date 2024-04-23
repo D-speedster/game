@@ -2,5 +2,5 @@
   "/not-found": "app/not-found.js",
   "/page": "app/page.js",
   "/api/product/route": "app/api/product/route.js",
-  "/products/page": "app/products/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

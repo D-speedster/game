@@ -684,10 +684,11 @@ Banner Style
 .main-banner {
   background-image: url(/images/bg.jpg);
   border-radius: 0px 0px 150px 150px;
-  background-position: center bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 225px 0px;
+  background-attachment: fixed;
 }
 
 .main-banner .caption h6 {
@@ -917,9 +918,18 @@ Trending Style
   cursor: pointer;
 }
 
-.trending .price span {
-  font-weight: bold;
-  color: green;
+.card .titleGame {
+
+  font-size: 16px;
+  font-weight: bold
+}
+
+.card .price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 15px;
 
 }
 
@@ -1183,34 +1193,16 @@ Footer Style
 */
 
 footer {
-  margin-top: 150px;
-  background-color: #0071f8;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(/images/bg.jpg);
-  min-height: 150px;
-
+  background-color: #142740;
+  min-height: 200px;
+  position: absolute;
+  width: 100%;
 }
 
-footer p {
-  text-align: center;
-  line-height: 90px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
+footer hr {
+  color: red;
+  height: 30px;
 }
-
-footer p a {
-  color: #fff;
-  transition: all .3s;
-  position: relative;
-  z-index: 3;
-}
-
-footer p a:hover {
-  opacity: 0.75;
-}
-
 
 /* 
 ---------------------------------------------
@@ -1689,6 +1681,11 @@ Contact PAge Style
   margin-top: 25px;
 }
 
+.Box-Offer .card {
+  border: none;
+  outline: none;
+}
+
 .Box-Offer {
   background-color: #FFF;
   height: 350px;
@@ -1696,13 +1693,15 @@ Contact PAge Style
   margin-top: 10px;
   border-radius: 15px;
 }
-.Box-Offer h4{
+
+.Box-Offer h4 {
   font-size: 17px;
   font-weight: bold;
   border-right: 3px #cd0505 solid;
   padding-right: 6px;
 }
-.swiper-wrapper{
+
+.swiper-wrapper {
   padding-bottom: 30px !important;
 }
 
@@ -1900,4 +1899,48 @@ Responsive Style
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-item {
+
+  height: max-content;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+
+
+}
+
+.footer-item i {
+  background-color: #0056b3;
+  border-radius: 50%;
+  border: 1px solid #FFf;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 21px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  height: 60px;
+  width: 60px;
+
+}
+
+.describe-footer p {
+  color: #FFF;
+
+}
+
+.logos img {
+  aspect-ratio: 1.5;
+  /* mix-blend-mode: color-burn; */
+  margin: 5px;
+  width: 100px;
+ 
+  border: 1px solid #9c9c9c;
+  border-radius: 10px;
+
 }

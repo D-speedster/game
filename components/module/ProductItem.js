@@ -25,8 +25,8 @@ export default async function ProductItem() {
                     modules={[Pagination]}
                     pagination={{
                         clickable: true,
-                      }} 
-                      grabCursor={true}
+                    }}
+                    grabCursor={true}
                     breakpoints={{
                         640: {
                             slidesPerView: 2,
@@ -48,12 +48,20 @@ export default async function ProductItem() {
 
                                 <img src={data.pic} />
 
-                                <div className='mt-2 mb-2'>
-                                    <span>بازی {data.title}</span>
-                                </div>
+                                <div className='container'>
+                                    <div className='mt-2 mb-2'>
 
-                                <div className='price'>
-                                   <button className='btn ' style={{backgroundColor: '#0056b3' , color : '#FFF'}}>{data.price} تومان</button>
+
+                                        <span className='titleGame'>بازی {data.title} </span>
+                                        <span className='d-block'>PS5</span>
+
+                                    </div>
+                                    <div className='info-platform'>
+                                      
+                                    </div>
+                                    <div className='price'>
+                                        <button className='btn ' style={{ backgroundColor: '#0056b3', color: '#FFF' }}>{data.price} تومان</button>
+                                    </div>
                                 </div>
 
 
