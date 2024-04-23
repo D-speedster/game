@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import { StickyContainer, Sticky } from 'react-sticky';
+
 export default function Header() {
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -62,7 +62,7 @@ export default function Header() {
                     <span className='mt-3' style={{ fontWeight: '600', color: '#FFF', fontSize: '14px' }}>اسپارتا</span>
                   </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
