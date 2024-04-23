@@ -22,7 +22,7 @@ export default function Header() {
 
 
   });
-  console.log(scrollPosition)
+
   return (
 
 
@@ -77,7 +77,7 @@ export default function Header() {
                       <Link style={{ color: '#FFF ' }} className="nav-link" href="products">فروشگاه ما</Link>
                     </li>
                     <li class="nav-item">
-                      <Link style={{ color: '#FFF ' }} className="nav-link" href="products">ویژه</Link>
+                      <Link style={{ color: '#FFF ' }} className="nav-link" href="products">اخبار</Link>
                     </li>
                     <li class="nav-item">
                       <Link style={{ color: '#FFF ' }} className="nav-link" href="contact">تماس با ما</Link>
