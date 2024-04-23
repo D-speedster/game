@@ -1,5 +1,4 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+
 import Header from "@/components/Header";
 import MainBanner from "@/components/Home/MainBanner";
 import Features from "@/components/Home/Features";
@@ -21,9 +20,9 @@ export default function Home() {
       <Header></Header>
       <MainBanner></MainBanner>
       <Features></Features>
-      <Trending title1='پرفروش ترین ها' title2='پرفروش ترین بازی ها'></Trending>
+      {/* <Trending title1='پرفروش ترین ها' title2='پرفروش ترین بازی ها'></Trending> */}
       <Offer></Offer>
-      <Trending title1='جدیدترین ها' title2='جدیدترین ترین بازی ها'></Trending>
+      {/* <Trending title1='جدیدترین ها' title2='جدیدترین ترین بازی ها'></Trending> */}
 
       <Most_played></Most_played>
       <Categories></Categories>

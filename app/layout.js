@@ -1,5 +1,5 @@
 
-import Footer from "@/components/Footer";
+
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.rtl.css'
 import localFont from 'next/font/local'
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className={myFont.className}>{children}</body>
-      {/* <Footer></Footer> */}
+     
     </html>
   );
 }
