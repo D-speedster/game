@@ -1,6 +1,4 @@
 import NewsItem from './NewsItem';
-
-NewsItem
 import ItemOffer from './ItemOffer';
 export default function Offer() {
 
