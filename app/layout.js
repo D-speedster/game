@@ -18,11 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html  >
       <head >
-        <script
-          // you might need to get a newer version
-          src="https://kit.fontawesome.com/fbadad80a0.js"
-          crossOrigin="anonymous"
-        ></script>
+    
       </head>
 
       <body className={myFont.className}>{children}</body>

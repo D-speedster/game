@@ -1,6 +1,8 @@
 'use client'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { BsBasket3Fill } from "react-icons/bs";
+
 
 export default function Header() {
 
@@ -56,14 +58,14 @@ export default function Header() {
             </nav>
             <nav class="navbar navbar-expand-lg " >
               <div class="container-fluid">
-                
-                  <Link className='navbar-brand' href='/'>
-                    <div className='LogoWeb d-flex' style={{ marginTop: '5px' }}>
-                      <img src='/images/Logo5.png' style={{ height: '55px', width: '55px', aspectRatio: '1.5' }} />
-                      <span className='mt-3' style={{ fontWeight: '600', color: '#FFF', fontSize: '14px' }}>اسپارتا</span>
-                    </div>
-                  </Link>
-               
+
+                <Link className='navbar-brand' href='/'>
+                  <div className='LogoWeb d-flex' style={{ marginTop: '5px' }}>
+                    <img src='/images/Logo5.png' style={{ height: '55px', width: '55px', aspectRatio: '1.5' }} />
+                    <span className='mt-3' style={{ fontWeight: '600', color: '#FFF', fontSize: '14px' }}>اسپارتا</span>
+                  </div>
+                </Link>
+
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -89,7 +91,8 @@ export default function Header() {
                     ثبت نام / لاگین
                   </span>
                   <span style={{ color: '#FFF ' }} class="navbar-text">
-                    سبد خرید
+                    <BsBasket3Fill style={{ marginTop: '-6px' }} />  
+                    سبدخرید
                   </span>
                 </div>
               </div>

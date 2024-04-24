@@ -8,7 +8,7 @@ export default function page() {
     return (
         <>
             <Header></Header>
-            <PageHeading></PageHeading>
+            <PageHeading title='اخبار گیم'></PageHeading>
             <div className='container mt-4'>
                 <div className='row gx-2 header-news'>
                     <div className='col-lg-6'>

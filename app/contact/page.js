@@ -7,31 +7,28 @@ export default function page() {
   return (
     <>
        <Header></Header>
-       <PageHeading></PageHeading>
+       <PageHeading title='تماس باما'></PageHeading>
     <div className="contact-page section">
     <div className="container">
       <div className="row">
         <div className="col-lg-6 align-self-center">
           <div className="left-text">
             <div className="section-heading">
-              <h6>Contact Us</h6>
-              <h2>Say Hello!</h2>
+              <h6>تماس باما</h6>
+              <h2>خوش آمدید!</h2>
             </div>
             <p>
-              LUGX Gaming Template is based on the latest Bootstrap 5 CSS
-              framework. This template is provided by TemplateMo and it is
-              suitable for your gaming shop ecommerce websites. Feel free to use
-              this for any purpose. Thank you.
+             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که 
             </p>
             <ul>
               <li>
-                <span>Address</span> Sunny Isles Beach, FL 33160, United States
+                <span>آدرس</span> تهران صادقیه پاساژ نور واحد 1111
               </li>
               <li>
-                <span>Phone</span> +123 456 7890
+                <span>شماره تماس</span> +989000000000
               </li>
               <li>
-                <span>Email</span> lugx@contact.com
+                <span>ایمیل</span> speed@contact.com
               </li>
             </ul>
           </div>

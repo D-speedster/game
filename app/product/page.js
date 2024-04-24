@@ -8,7 +8,7 @@ export default function page() {
     <>
    
    <Header></Header>
-    <PageHeading></PageHeading>
+    <PageHeading title='بازی : ....'></PageHeading>
     <Single_product></Single_product>
     </>
   )
