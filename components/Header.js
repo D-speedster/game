@@ -1,7 +1,7 @@
-'use client'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { BsBasket3Fill } from "react-icons/bs";
+import styles from './Header.module.css';
 
 
 export default function Header() {
@@ -28,11 +28,11 @@ export default function Header() {
   return (
 
 
-    <header className={`header-area ${ClassNeed} `}>
+    <header className={`${styles['header-area']} ${ClassNeed} `}>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <nav className="main-nav">
+            <nav className={styles['main-nav']}>
 
 
               {/* <ul className="nav">
@@ -91,7 +91,7 @@ export default function Header() {
                     ثبت نام / لاگین
                   </span>
                   <span style={{ color: '#FFF ' }} class="navbar-text">
-                    <BsBasket3Fill style={{ marginTop: '-6px' }} />  
+                    <BsBasket3Fill style={{ marginTop: '-6px' }} />
                     سبدخرید
                   </span>
                 </div>
