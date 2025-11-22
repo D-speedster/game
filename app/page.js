@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import MainBanner from "@/components/Home/MainBanner";
 import Features from "@/components/Home/Features";
@@ -7,14 +6,12 @@ import Most_played from "@/components/Home/Most_played";
 import Categories from "@/components/Home/Categories";
 import Footer from "@/components/Footer";
 import Cta from "@/components/Home/Cta";
-import ConnectToDb from "@/utils/db";
 import Offer from "@/components/Home/Offer";
 
 
 export default function Home() {
   
 
-  ConnectToDb()
   return (
     <div>
       <Header></Header>
